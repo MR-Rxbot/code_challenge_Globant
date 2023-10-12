@@ -6,6 +6,10 @@ import pandas as pd
 datos = pd.read_csv(
     "C:/Users/luisa/OneDrive/Escritorio/spotify-2023.csv", encoding="latin1")
 
-# Guardaremos nuestros datos en una carpeta la cual designaremos a continuacion
+# Guardaremos nuestros datos en una nueva carpeta la cual se llamara Data
+
+datos.to_csv(
+    "C:/Users/luisa/OneDrive/Escritorio/Documentacion Code Challenge/Data/data.csv")
+
 
 print(datos.head())
